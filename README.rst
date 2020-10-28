@@ -12,8 +12,24 @@ The goal of this proposal is to suggest new behavior for command substitution op
 
 This proposal have no goal to create exactly the same behavior and syntax as in previous shells in the shells history. Also this proposal has no goal to support backwards compatibility exactly. The most use cases was designed with miximization of backwards compatibility in mind but the operators in xonsh are located very close to the core functionality and to achieve the real improvement of syntax and logic it requires step off from backwards compatibility.
 
-wip
-***
+Changes
+*******
+
+.. list-table::
+    :header-rows: 1
+
+    * - Before
+      - After
+    * - ``$()`` returns output string
+      - ``$()`` returns list of lines from output (and has additional string function)
+    * - ``!()`` raises error in subproc mode
+      - ``!()`` returns output string in subproc mode - the same as $() before
+    * - ``@(!())`` returns list of lines with trailing new line in every line
+      - ``@(!())`` returns output string the same as `!()` in subproc mode
+
+
+Changes in use cases
+********************
 
 .. list-table::
     :header-rows: 1
