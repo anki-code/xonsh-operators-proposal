@@ -19,14 +19,22 @@ wip
     :header-rows: 1
 
     * - Use case
-      - Python before / after
       - Subproc before / after
-    * - Get single argument from output 
+      - Python before / after
+    * - Get single argument
+      - ``id @($(whoami).rstrip())``
+      
+        ``id $(whoami)``
       - ``name = $(whoami).rstrip()``     
             
         ``name = $(whoami).str``
         
-      - ``id @($(whoami).rstrip())``
+    * - Get multiple arguments
+      - ``du @($(ls).split('\n'))``
       
-        ``id $(whoami)``
+        ``du $(ls)``
+      - ``files = $(ls).split('\n')``     
+            
+        ``files = $(ls)``
+        
 
