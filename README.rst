@@ -71,4 +71,4 @@ The table of use cases compares the syntax of the current xonsh and the proposed
         ``html = !(curl https://xon.sh).out``
 
 
-Work in progress...
+While the work on this page in progress you can read the old description in OLD_DESCRIPTION.md .
