@@ -31,12 +31,21 @@ Changes
 How will change the use cases
 *****************************
 
+The commands in the table is valid copy-pastable examples for Linux. To run "current" command use current version of xonsh. To run the "proposed" command try to install the xonsh from the branch:
+
+.. code-block:: bash
+  
+    pip install -U git+https://github.com/anki-code/xonsh.git@captured_subproc
+    xonsh --no-rc
+
+The table of use cases compares the syntax of the current xonsh and the proposed: 
+
 .. list-table::
     :header-rows: 1
 
     * - Use case
-      - Subproc before / after
-      - Python before / after
+      - Subproc current / proposed
+      - Python current / proposed
     * - Get single argument
       - ``id @($(whoami).rstrip())``
       
