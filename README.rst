@@ -21,7 +21,7 @@ Changes
     * - Before
       - After
     * - ``$()`` returns output string.
-      - ``$()`` returns object that originally list of lines that produced by the Python built in function ``output.splitlines()``. The object has additional string representation and functions.
+      - ``$()`` returns object that originally list of lines produced by the Python built in function ``output.splitlines()``. The object has additional string representation and functions.
     * - ``!()`` raises error in subproc mode.
       - ``!()`` returns output string in subproc mode - the same as $() before.
     * - ``@(!())`` returns list of lines with trailing new line in every line.
