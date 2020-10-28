@@ -4,9 +4,9 @@ xonsh-operators-proposal
 Motivation
 **********
 
-The first command substitution operator (now most known as `$()`) was created in 1979 and until nowadays it was used to split the one command output and push it as arguments to another command.
+The first command substitution operator (now most known as ``$()``) was created in 1979 and until nowadays `it was used to split the one command output and push it as arguments to another command <https://en.wikipedia.org/wiki/Command_substitution>`_.
 
-In xonsh the command substitution operator has the same syntax - `$()` - but in xonsh it returns the pure output from one command to another. This behavior not well-known and not expected and leads to a constant need to `strip`-ping and `split`-ting the output of the original command. This brings syntax overhead to xonsh commands. This is unexpected behavior for new users. And finally this blurs the difference between another xonsh operators.
+In xonsh the command substitution operator has the same syntax - ``$()`` - but in xonsh it returns the pure output from one command to another. This behavior not well-known and not expected and leads to a constant need to ``strip``-ping and ``split``-ting the output of the original command. This brings syntax overhead to xonsh commands. This is unexpected behavior for new users. And finally this blurs the difference between another xonsh operators.
 
 The goal of this proposal is to suggest new behavior for command substitution operator in xonsh and changes in another operators to make the behavior more common and consistent and also with shortening the syntax overhead during usage the command substitution operators.
 
