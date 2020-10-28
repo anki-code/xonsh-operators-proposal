@@ -28,8 +28,8 @@ Changes
       - ``@(!())`` returns output string the same as ``!()`` in subproc mode.
 
 
-Changes in use cases
-********************
+How will change the use cases
+*****************************
 
 .. list-table::
     :header-rows: 1
