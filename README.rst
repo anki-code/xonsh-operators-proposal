@@ -1,4 +1,4 @@
-xonsh-operators-proposal
+xonsh operators proposal
 ------------------------
 
 Motivation
