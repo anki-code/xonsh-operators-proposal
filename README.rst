@@ -41,6 +41,7 @@ The commands in the table is valid copy-pastable examples for Linux. To run "cur
 The table of use cases compares the syntax of the current xonsh and the proposed: 
 
 .. list-table::
+    :widths: 10 45 45
     :header-rows: 1
 
     * - Use case
