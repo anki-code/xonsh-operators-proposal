@@ -61,6 +61,14 @@ The table of use cases compares the syntax of the current xonsh and the proposed
       - ``files = $(ls).split('\n')``     
             
         ``files = $(ls)``
-        
+
+    * - Get pure output
+      - ``echo -n $(curl https://xon.sh) | wc -c``
+      
+        ``echo -n !(curl https://xon.sh) | wc -c``
+      - ``html = $(curl https://xon.sh)``     
+            
+        ``html = !(curl https://xon.sh).out``
+
 
 Work in progress...
