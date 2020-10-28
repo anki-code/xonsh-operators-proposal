@@ -38,7 +38,7 @@ The commands in the table is valid copy-pastable examples for Linux. To run "cur
     pip install -U git+https://github.com/anki-code/xonsh.git@captured_subproc
     xonsh --no-rc
 
-The table of use cases compares the syntax of the current xonsh and the proposed: 
+The table of use cases compares the syntax of the current xonsh and the proposed (`click to get best view <https://github.com/anki-code/xonsh-operators-proposal/blob/main/README.rst>`_): 
 
 .. list-table::
     :widths: 10 45 45
