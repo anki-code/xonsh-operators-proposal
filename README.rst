@@ -152,7 +152,7 @@ What will be broken after update:
 
         ``json.loads($(curl https://api.github.com/orgs/xonsh))``
 
-        TypeError: the JSON object must be str.
+        TypeError: the JSON object must be str. List given.
 
       - Replace ``$()`` to ``!()`` or use ``$().str``.
 
