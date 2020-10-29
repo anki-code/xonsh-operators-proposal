@@ -181,10 +181,16 @@ Current proposal could be improved by suggestion with more optimal or useful pro
 Questions
 *********
 
-@scopatz: I think using $() in xonsh to split into a list of arguments is a neat idea,
-but it would necessitate the addition of some default or configurable way to split those arguments.
-For example, should $() be split by lines or by whitespace (like effectively what Bash does)?
+1. From @scopatz: I think using $() in xonsh to split into a list of arguments is a neat idea,
+   but it would necessitate the addition of some default or configurable way to split those arguments.
+   For example, should $() be split by lines or by whitespace (like effectively what Bash does)?
 
-@anki-code: Can we use one operator ``$()`` and completely remove ``!()`` by moving the ``!()`` object
-functionality to ``$()``? It looks interesting because in subprocess mode the ``!()`` operator always used with python
-substitution i.e. ``@(!().split())``. Is there a way to remove ``!()`` and do ``@($().split())``. Does it make sense?
+   Answer:
+
+   In this approach the setting of the complex splitting algorithm belongs to ``!()`` operator
+   that represents the pure output. It's assumed that the user should use ``@(!(cat file).split('-|-'))``
+   approach for complex cases.
+
+2. From @anki-code: Can we use one operator ``$()`` and completely remove ``!()`` by moving the ``!()`` object
+   functionality to ``$()``? It looks interesting because in subprocess mode the ``!()`` operator always used with python
+   substitution i.e. ``@(!().split())``. Is there a way to remove ``!()`` and do ``@($().split())``. Does it make sense?
