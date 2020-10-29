@@ -68,19 +68,6 @@ The changes that suggested. Everything else stays unchanged.
       - ``@(!())`` returns output string the same as ``!()`` in subproc mode.
 
 
-OutputLines object
-******************
-
-In Python mode the ``$()`` operator returns ``OutputLines`` object that:
-
-* Inherited from ``list`` class and is constructed as ``output.splitlines()``.
-* Has ``str`` representation as ``os.sep.join(self)``.
-* Has ``str`` property to short access i.e. ``name = $(whoami).str``
-* Has all string methods i.e. the ``$().find(txt)`` will return ``str(self).find(txt)``.
-* Has all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in self]``.
-
-In subprocess mode the ``$()`` operator returns ``OutputLines`` object that becomes the list of lines.
-
 Git-branch with changes
 ***********************
 
@@ -164,6 +151,22 @@ The table of use cases compares the syntax of the current xonsh and the proposed
         ``lines = $(ifconfig).lines_strip()``
 
 Feel free to suggest your use cases.
+
+OutputLines object
+******************
+
+In Python mode the ``$()`` operator returns ``OutputLines`` object that:
+
+* Inherited from ``list`` class and is constructed as ``output.splitlines()``.
+* Has ``str`` representation as ``os.sep.join(self)``.
+* Has ``str`` property to short access i.e. ``name = $(whoami).str``
+* Has all string methods i.e. the ``$().find(txt)`` will return ``str(self).find(txt)``.
+* Has all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in self]``.
+* *[Discussed] Potentially has ``lines(sep)`` method to return the lines splitted by ``sep`` i.e. ``fields = $(cat table.txt).lines('|')``*
+* *[Discussed] Potentially has ``words`` property to return the same as ``@$()`` operator and replace it*
+* *[Discussed] Potentially has ``out``/``output``/``o`` property to return the same as ``!()`` operator and replace it*
+
+In subprocess mode the ``$()`` operator returns ``OutputLines`` object that becomes the list of lines.
 
 Backwards compatibility
 ***********************
