@@ -68,23 +68,23 @@ The changes that suggested. Everything else stays unchanged.
       - ``@(!())`` returns output string the same as ``!()`` in subproc mode.
 
 
-Better view
-***********
+Git-branch with changes
+***********************
 
-`Switch the page to the better view <https://github.com/anki-code/xonsh-operators-proposal/blob/main/README.rst#better-view>`_ to more comfortable reading of the table below.
+To trying the changes install xonsh from branch:
+
+.. code-block:: bash
+
+    pip install -U git+https://github.com/anki-code/xonsh.git@captured_subproc
+    xonsh --no-rc
+
 
 How will the use cases change
 *****************************
 
-The commands in the table below are valid copy-pastable examples for Linux. To run "current" command use current version
-of xonsh. To run the "proposed" command try to install the xonsh from the branch:
+The table of use cases compares the syntax of the current xonsh and the proposed.
 
-.. code-block:: bash
-  
-    pip install -U git+https://github.com/anki-code/xonsh.git@captured_subproc
-    xonsh --no-rc
-
-The table of use cases compares the syntax of the current xonsh and the proposed:
+`Switch the page to the better view <https://github.com/anki-code/xonsh-operators-proposal/blob/main/README.rst#how-will-the-use-cases-change>`_ for more comfortable reading the table:
 
 .. list-table::
     :widths: 1 5 30 60
@@ -126,7 +126,9 @@ The table of use cases compares the syntax of the current xonsh and the proposed
       - ``grep`` single argument
       - ``cat /etc/passwd | grep $(whoami)``
 
-        Wrong output of all lines in current version. One correct single line after update.
+        Wrong output of all lines in current version.
+
+        One correct single line after update.
 
       -
 
