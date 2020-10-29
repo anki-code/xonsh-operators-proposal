@@ -139,12 +139,10 @@ What will be broken after update:
     :widths: 1 70 29
     :header-rows: 1
 
-    * - #
-      - Case
+    * - Case
       - Fix
 
-    * - 1
-      - Functions that expect string but not convert the argument to string representation:
+    * - Functions that expect string but not convert the argument to string representation:
 
         ``json.loads($(curl https://api.github.com/orgs/xonsh))``
 
@@ -152,8 +150,7 @@ What will be broken after update:
 
       - Replace ``$()`` to ``!()`` or use ``$().str``.
 
-    * - 2
-      - Using ``!()`` as list i.e. ``@([l.rstrip() for l in !(ls)])``
+    * - Using ``!()`` as list i.e. ``@([l.rstrip() for l in !(ls)])``
 
       - Replace ``!()`` to ``$()``.
 
