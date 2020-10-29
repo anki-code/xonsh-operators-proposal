@@ -71,9 +71,9 @@ The changes that suggested. Everything else stays unchanged.
 Better view
 ***********
 
-`Switch the page to the better view <https://github.com/anki-code/xonsh-operators-proposal/blob/main/README.rst>`_ to more comfortable reading of the table below.
+`Switch the page to the better view <https://github.com/anki-code/xonsh-operators-proposal/blob/main/README.rst#better-view>`_ to more comfortable reading of the table below.
 
-How will change the use cases
+How will the use cases change
 *****************************
 
 The commands in the table below are valid copy-pastable examples for Linux. To run "current" command use current version
@@ -87,7 +87,7 @@ of xonsh. To run the "proposed" command try to install the xonsh from the branch
 The table of use cases compares the syntax of the current xonsh and the proposed:
 
 .. list-table::
-    :widths: 1 9 35 55
+    :widths: 1 5 30 60
     :header-rows: 1
 
     * - #
