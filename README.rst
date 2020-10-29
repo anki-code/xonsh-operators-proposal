@@ -1,7 +1,9 @@
-xonsh operators proposal
-------------------------
 
 .. raw:: html
+
+    <p align="center">
+    <h1>xonsh operators proposal</h1>
+    </p>
 
     <p align="center">
     If you like the proposal click ⭐ on the repo and stay in watchers.
@@ -33,14 +35,17 @@ Approach
 
 The idea behind this approach is to divide operators into three types according to the strength of their effect on the output:
 
-* ``@$()`` is a high strength of separation the output. In the current version of xonsh it's the same as bash ``$()``
-  operator that separate the output by whitespaces. This behavior stays unchanged.
+* | ``@$()`` is a high strength of separation the output. In the current version of xonsh it's the same as bash ``$()``
+    operator that separate the output by whitespaces. This behavior stays unchanged.
+  |
 
-* ``$()`` is a medium strength of separation the output - by lines. The line - is a middle way. For example if the line
-  is a filename with spaced it will be saved as one argument (against previous operator that separate all). It's good
-  property for the cross-platform and for most use cases.
+* | ``$()`` is a medium strength of separation the output - by lines. The line - is a middle way. For example if the line
+    is a filename with spaced it will be saved as one argument (against previous operator that separate all). It's good
+    property for the cross-platform and for most use cases.
+  |
 
-* ``!()`` is the zero strength of separation the output. This operator returns pure output to any further custom separation and decoration.
+* | ``!()`` is the zero strength of separation the output. This operator returns pure output to any further custom separation and decoration.
+  |
 
 Changes
 *******
@@ -82,7 +87,7 @@ of xonsh. To run the "proposed" command try to install the xonsh from the branch
 The table of use cases compares the syntax of the current xonsh and the proposed:
 
 .. list-table::
-    :widths: 1 9 45 45
+    :widths: 1 9 35 55
     :header-rows: 1
 
     * - #
@@ -126,7 +131,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
       -
 
 
-Work in progress... Feel free to add your use cases.
+Feel free to suggest your use cases.
 
 Backwards compatibility
 ***********************
