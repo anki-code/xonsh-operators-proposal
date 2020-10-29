@@ -103,7 +103,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
         ``name = $(whoami).str``
         
     * - Get multiple arguments
-      - ``du @($(ls).split('\n'))``
+      - ``du @($(ls).rstrip().split('\n'))``
       
         ``du $(ls)``
       - ``files = $(ls).split('\n')``     
