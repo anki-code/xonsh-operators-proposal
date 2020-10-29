@@ -17,17 +17,17 @@ was created in 1979 and until nowadays it was used to split the one command outp
 
 In xonsh the command substitution operator has the same syntax - ``$()`` - but in xonsh it returns the pure output from
 one command to another. This behavior not well-known, not expected and leads to a constant need to ``strip``-ping
-and ``split``-ting the output of the original command. This brings syntax overhead to xonsh commands. This is unexpected
+and ``split``-ting the output of the original command. This brings the syntax overhead to xonsh commands. This is unexpected
 behavior for new users. And finally this blurs the difference between another xonsh operators.
 
-The goal of this proposal is to suggest a new behavior for command substitution operator in xonsh and changes in another
+The goal of this proposal is to suggest a new behavior for the command substitution operator and changes in another
 operators to make the behavior more common and consistent and also with shortening the syntax overhead during usage
 the command substitution operators.
 
 This proposal have no goal to create exactly the same behavior and syntax as in previous shells in the shells history.
 Also this proposal has no goal to support backwards compatibility exactly. The most use cases was designed with
 maximization of backwards compatibility in mind but the operators in xonsh are located very close to the core
-functionality and to achieve the real improvement of syntax and logic it requires step off from backwards compatibility.
+functionality and to achieve the real improvement of syntax and logic it requires move away from the backwards compatibility.
 
 
 Approach
