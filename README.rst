@@ -209,8 +209,9 @@ Questions
    the output. Or you could apply many times, like @split@upper(). Then what we have now would just be the default
    value: @split$() == @$(). However, this was never fully done, so maybe it is better to drop the syntax entirely.
 
-   **Answer**: Probably we can replace it to something like ``@($().supersplit)`` but it's new syntax overhead and
-   new backwards compatibility issue. I suggest to save this operator as is for now.
+   **Answer**: Probably we can replace it to something like ``@($().words)`` but it's new syntax overhead and
+   new backwards compatibility issue. We'll think about dropping ``@$()`` on final stages of this proposal
+   detalization.
 
 
 
