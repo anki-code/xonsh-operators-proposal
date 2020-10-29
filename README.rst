@@ -159,15 +159,15 @@ In Python mode the ``$()`` operator returns ``OutputLines`` object that:
 
 * Inherited from ``list`` class and is constructed as ``output.splitlines()``.
 * Has ``str`` representation as ``os.sep.join(self)``.
-* Has ``str`` property to short access i.e. ``name = $(whoami).str``
+* Has ``str`` property to short access i.e. ``name = $(whoami).str``.
 * Has all string methods i.e. the ``$().find(txt)`` will return ``str(self).find(txt)``.
 * Has all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in self]``.
 
 *Potentially (to discuss):*
 
-* Has ``lines(sep)`` method to return the lines splitted by ``sep`` i.e. ``fields = $(cat table.txt).lines('|')``
-* Has ``words`` property to return the same as ``@$()`` operator and replace it
-* Has ``out``/``output``/``o`` property to return the same as ``!()`` operator and replace it
+* Has ``lines(sep)`` method to return the lines splitted by ``sep`` i.e. ``fields = $(cat table.txt).lines('|')``.
+* Has ``words`` property to return the same as ``@$()`` operator and replace`.
+* Has ``out``/``output``/``o`` property to return the same as ``!()`` operator and replace it.
 
 In subprocess mode the ``$()`` operator returns ``OutputLines`` object that becomes the list of lines.
 
