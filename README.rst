@@ -129,12 +129,11 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
       - Not applicable.
 
-    * - Strip all lines in the output
+    * - Apply string function to every line
       - The similar as python mode.
       - ``lines = [l.strip() for l in $(ifconfig)[:-1].split('\n')]``
 
         ``lines = $(ifconfig).lines_strip()``
-
 
 Feel free to suggest your use cases.
 
