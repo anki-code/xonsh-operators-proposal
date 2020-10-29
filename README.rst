@@ -106,7 +106,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
       - ``du @($(ls).rstrip().split('\n'))``
       
         ``du $(ls)``
-      - ``files = $(ls).split('\n')``     
+      - ``files = $(ls).rstrip().split('\n')``
             
         ``files = $(ls)``
 
@@ -125,7 +125,13 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
         One correct single line after update.
 
-      -
+      - Not applicable.
+
+    * - Strip all lines in the output
+      - The similar as python mode.
+      - ``lines = [l.strip() for l in $(ifconfig)[:-1].split('\n')]``
+
+        ``lines = $(ifconfig).lines_strip()``
 
 
 Feel free to suggest your use cases.
