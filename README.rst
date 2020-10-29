@@ -78,6 +78,8 @@ To trying the changes install xonsh from branch:
     pip install -U git+https://github.com/anki-code/xonsh.git@captured_subproc
     xonsh --no-rc
 
+Note! Not all features described in this proposal are implemented yet i.e. `@(!())` still returns the list.
+PRs are welcome!
 
 How will the use cases change
 *****************************
