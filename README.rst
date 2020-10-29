@@ -185,7 +185,7 @@ Questions
    but it would necessitate the addition of some default or configurable way to split those arguments.
    For example, should $() be split by lines or by whitespace (like effectively what Bash does)?
 
-   Answer:
+   **Answer**:
 
    In this approach the setting of the complex splitting algorithm belongs to ``!()`` operator
    that represents the pure output. It's assumed that the user should use ``@(!(cmd).split('-|-'))``
