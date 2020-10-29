@@ -68,6 +68,19 @@ The changes that suggested. Everything else stays unchanged.
       - ``@(!())`` returns output string the same as ``!()`` in subproc mode.
 
 
+OutputLines object
+******************
+
+In Python mode the ``$()`` operator returns ``OutputLines`` object that:
+
+* Inherited from ``list`` class and is constructed as ``output.splitlines()``.
+* Has ``str`` representation as ``os.sep.join(self)``.
+* Has ``str`` property to short access i.e. ``name = $(whoami).str``
+* Has all string methods i.e. the ``$().find(txt)`` will return ``str(self).find(txt)``.
+* Has all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in self]``.
+
+In subprocess mode the ``$()`` operator returns ``OutputLines`` object that becomes the list of lines.
+
 Git-branch with changes
 ***********************
 
