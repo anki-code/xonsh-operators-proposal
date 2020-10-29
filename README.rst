@@ -131,7 +131,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
     * - ``grep`` single argument
 
-        ✅ Fixed the bug.
+        ✅ Fix the bug.
 
       - ``cat /etc/passwd | grep $(whoami)``
 
