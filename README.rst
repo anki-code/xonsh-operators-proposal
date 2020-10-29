@@ -183,6 +183,22 @@ Questions
    functionality to ``$()``? It looks interesting because in subprocess mode the ``!()`` operator always used with python
    substitution i.e. ``@(!().split())``. Is there a way to remove ``!()`` and do ``@($().split())``. Does it make sense?
 
+   **Answer**: I'm going to review the possibilities to merge ``$()`` and ``!()``. `Discussion <https://github.com/anki-code/xonsh-operators-proposal/issues/1>`_.
+
+3. From @scopatz: What happens with the other subprocess operators depending on their calling modes: ![], !(), $[]
+
+   **Answer**: <todo>
+
+4. From @scopatz: What do we do with the @$() operator? The initial idea for @$() what that you could register
+   transformation functions (like a decorator), that would modify output. For example, @upper$() would uppercase
+   the output. Or you could apply many times, like @split@upper(). Then what we have now would just be the default
+   value: @split$() == @$(). However, this was never fully done, so maybe it is better to drop the syntax entirely.
+
+   **Answer**: Probably we can replace it to something like ``@($().supersplit)`` but it's new syntax overhead and
+   new backwards compatibility issue. I suggest to save this operator as is for now.
+
+
+
 Proposals to this proposal
 **************************
 There are two degrees of freedom:
