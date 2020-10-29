@@ -1,5 +1,8 @@
+
 .. list-table::
-    :stub-columns: 1
+   :widths: 10 90
+   :header-rows: 1
+   :stub-columns: 1
 
   * - XEP:
     - 1
