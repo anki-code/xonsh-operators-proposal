@@ -100,7 +100,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
       - Subproc current / proposed
       - Python current / proposed
 
-    * - Get single argument
+    * - Get single argument.
 
         ✅ Becomes shorter.
 
@@ -111,7 +111,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
             
         ``name = $(whoami).str``
         
-    * - Get multiple arguments
+    * - Get multiple arguments.
 
         ✅ Becomes shorter.
 
@@ -122,7 +122,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
             
         ``files = $(ls)``
 
-    * - Get pure output
+    * - Get pure output.
 
         🔀️ The similar.
 
@@ -133,7 +133,25 @@ The table of use cases compares the syntax of the current xonsh and the proposed
             
         ``html = !(curl https://xon.sh).out``
 
-    * - ``grep`` single argument
+    * - Custom output splitting.
+
+        🔀 Becomes clearer.
+
+      - The similar as python mode.
+      - ``shell = $(head -n1 /etc/passwd)[:-1].split(':').pop()``
+
+        ``shell = $(head -n1 /etc/passwd).str.split(':').pop()``
+
+    * - Apply string function to every line.
+
+        ✅ Becomes shorter.
+
+      - The similar as python mode.
+      - ``lines = [l.strip() for l in $(ifconfig)[:-1].split('\n')]``
+
+        ``lines = $(ifconfig).lines_strip()``
+
+    * - ``grep`` single argument.
 
         ✅ Fix the bug.
 
@@ -145,14 +163,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
       - Not applicable.
 
-    * - Apply string function to every line
 
-        ✅ Becomes shorter.
-
-      - The similar as python mode.
-      - ``lines = [l.strip() for l in $(ifconfig)[:-1].split('\n')]``
-
-        ``lines = $(ifconfig).lines_strip()``
 
 Feel free to suggest your use cases.
 
