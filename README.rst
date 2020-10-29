@@ -6,6 +6,10 @@
     </p>
 
     <p align="center">
+    Status: work in progress. Review, comments, issues, pull requests are very welcome.
+    </p>
+
+    <p align="center">
     If you like the proposal click ⭐ on the repo and stay in watchers.
     </p>
 
@@ -168,6 +172,7 @@ In Python mode the ``$()`` operator returns ``OutputLines`` object that:
 * Has ``lines(sep)`` method to return the lines splitted by ``sep`` i.e. ``fields = $(cat table.txt).lines('|')``.
 * Has ``words`` property to return the same as ``@$()`` operator and replace it.
 * Has ``out``/``output``/``o`` property to return the same as ``!()`` operator and replace it.
+* Will be merged with ``CommandPipeline`` object to replace ``!()`` operator.
 
 In subprocess mode the ``$()`` operator returns ``OutputLines`` object that becomes the list of lines.
 
