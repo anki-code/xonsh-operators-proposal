@@ -166,7 +166,7 @@ In Python mode the ``$()`` operator returns ``OutputLines`` object that:
 *Potentially (to discuss):*
 
 * Has ``lines(sep)`` method to return the lines splitted by ``sep`` i.e. ``fields = $(cat table.txt).lines('|')``.
-* Has ``words`` property to return the same as ``@$()`` operator and replace`.
+* Has ``words`` property to return the same as ``@$()`` operator and replace it.
 * Has ``out``/``output``/``o`` property to return the same as ``!()`` operator and replace it.
 
 In subprocess mode the ``$()`` operator returns ``OutputLines`` object that becomes the list of lines.
