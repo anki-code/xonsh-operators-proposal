@@ -9,8 +9,6 @@
     - anki-code
   * - Status:
     - Draft
-  * - Type:
-    - Standards Track
   * - Created:
     - 2020-10-30
   * - Xonsh-Version:
