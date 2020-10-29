@@ -87,16 +87,14 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 `Switch the page to the better view <https://github.com/anki-code/xonsh-operators-proposal/blob/main/README.rst#how-will-the-use-cases-change>`_ for more comfortable reading the table:
 
 .. list-table::
-    :widths: 1 5 30 60
+    :widths: 5 30 60
     :header-rows: 1
 
-    * - #
-      - Use case
+    * - Use case
       - Subproc current / proposed
       - Python current / proposed
 
-    * - 1
-      - Get single argument
+    * - Get single argument
       - ``id @($(whoami).rstrip())``
       
         ``id $(whoami)``
@@ -104,8 +102,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
             
         ``name = $(whoami).str``
         
-    * - 2
-      - Get multiple arguments
+    * - Get multiple arguments
       - ``du @($(ls).split('\n'))``
       
         ``du $(ls)``
@@ -113,8 +110,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
             
         ``files = $(ls)``
 
-    * - 3
-      - Get pure output
+    * - Get pure output
       - ``echo -n $(curl https://xon.sh) | wc -c``
       
         ``echo -n !(curl https://xon.sh) | wc -c``
@@ -122,8 +118,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
             
         ``html = !(curl https://xon.sh).out``
 
-    * - 4
-      - ``grep`` single argument
+    * - ``grep`` single argument
       - ``cat /etc/passwd | grep $(whoami)``
 
         Wrong output of all lines in current version.
