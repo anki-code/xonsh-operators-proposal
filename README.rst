@@ -40,7 +40,7 @@ The idea behind this approach is to divide operators into three types according 
   |
 
 * | ``$()`` is a medium strength of separation the output - by lines. The line - is a middle way. For example if the line
-    is a filename with spaced it will be saved as one argument (against previous operator that separate all). It's good
+    is a filename with spaces it will be saved as one argument (against previous operator that separate all). It's good
     property for the cross-platform and for most use cases.
   |
 
