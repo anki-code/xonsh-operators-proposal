@@ -167,17 +167,6 @@ What will not be broken after update:
 * String function calls i.e. ``$(whoami).strip()``, ``$(ls).split('\n')``.
 * Simple conditions i.e. `if $(date | grep 59):`
 
-
-Proposals to this proposal
-**************************
-There are two degrees of freedom:
-
-* Setting different behavior of the operator in subproc and python mode.
-* Returning the Python object from the operator that has an ability to return list or str representations and has any
-  functions and properties.
-
-Current proposal could be improved by suggestion with more optimal or useful properties of the objects that were returned by operators.
-
 Questions
 *********
 
@@ -193,3 +182,12 @@ Questions
    functionality to ``$()``? It looks interesting because in subprocess mode the ``!()`` operator always used with python
    substitution i.e. ``@(!().split())``. Is there a way to remove ``!()`` and do ``@($().split())``. Does it make sense?
 
+Proposals to this proposal
+**************************
+There are two degrees of freedom:
+
+* Setting different behavior of the operator in subproc and python mode.
+* Returning the Python object from the operator that has an ability to return list or str representations and has any
+  functions and properties.
+
+Current proposal could be improved by suggestion with more optimal or useful properties of the objects that were returned by operators.
