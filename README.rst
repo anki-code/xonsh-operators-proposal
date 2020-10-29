@@ -2,7 +2,7 @@
 .. raw:: html
 
     <p align="center">
-    <h1>xonsh operators proposal</h1>
+    <h1 align="center">xonsh operators proposal</h1>
     </p>
 
     <p align="center">
