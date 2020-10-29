@@ -136,7 +136,7 @@ Backwards compatibility
 What will be broken after update:
 
 .. list-table::
-    :widths: 1 70 29
+    :widths: 70 29
     :header-rows: 1
 
     * - Case
