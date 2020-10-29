@@ -1,17 +1,20 @@
+.. list-table::
+    :stub-columns: 1
 
-.. raw:: html
-
-    <p align="center">
-    <h1 align="center">Xonsh Operators Proposal #1</h1>
-    </p>
-
-    <p align="center">
-    Status: work in progress. Review, comments, issues, pull requests are very welcome.
-    </p>
-
-    <p align="center">
-    If you like the proposal click ⭐ on the repo and stay in watchers.
-    </p>
+  * - XEP:
+    - 1
+  * - Title:
+    - Xonsh Operators Proposal
+  * - Author:
+    - anki-code
+  * - Status:
+    - Draft
+  * - Type:
+    - Standards Track
+  * - Created:
+    - 2020-10-30
+  * - Xonsh-Version:
+    - 0.9.24
 
 Motivation
 **********
