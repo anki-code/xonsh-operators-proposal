@@ -62,7 +62,7 @@ The changes that suggested. Everything else stays unchanged.
       - ``$()`` returns object that originally the list of lines produced by the Python built in function `splitlines() <https://docs.python.org/3.8/library/stdtypes.html#str.splitlines>`_. The object has additional string representation and functions.
 
     * - ``!()`` raises error in subproc mode.
-      - ``!()`` returns output string in subproc mode - the same as $() before.
+      - ``!()`` returns output string in subproc mode - the same as ``$()`` before.
 
     * - ``@(!())`` returns list of lines with trailing new line in every line.
       - ``@(!())`` returns output string the same as ``!()`` in subproc mode.
@@ -97,6 +97,9 @@ The table of use cases compares the syntax of the current xonsh and the proposed
       - Python current / proposed
 
     * - Get single argument
+
+        ✅ Becomes shorter.
+
       - ``id @($(whoami).rstrip())``
       
         ``id $(whoami)``
@@ -105,6 +108,9 @@ The table of use cases compares the syntax of the current xonsh and the proposed
         ``name = $(whoami).str``
         
     * - Get multiple arguments
+
+        ✅ Becomes shorter.
+
       - ``du @($(ls).rstrip().split('\n'))``
       
         ``du $(ls)``
@@ -113,6 +119,9 @@ The table of use cases compares the syntax of the current xonsh and the proposed
         ``files = $(ls)``
 
     * - Get pure output
+
+        🔀️ The similar.
+
       - ``echo -n $(curl https://xon.sh) | wc -c``
       
         ``echo -n !(curl https://xon.sh) | wc -c``
@@ -121,6 +130,9 @@ The table of use cases compares the syntax of the current xonsh and the proposed
         ``html = !(curl https://xon.sh).out``
 
     * - ``grep`` single argument
+
+        ✅ Fixed the bug.
+
       - ``cat /etc/passwd | grep $(whoami)``
 
         Wrong output of all lines in current version.
@@ -130,6 +142,9 @@ The table of use cases compares the syntax of the current xonsh and the proposed
       - Not applicable.
 
     * - Apply string function to every line
+
+        ✅ Becomes shorter.
+
       - The similar as python mode.
       - ``lines = [l.strip() for l in $(ifconfig)[:-1].split('\n')]``
 
