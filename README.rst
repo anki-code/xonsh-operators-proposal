@@ -162,9 +162,10 @@ In Python mode the ``$()`` operator returns ``OutputLines`` object that:
 * Has ``str`` property to short access i.e. ``name = $(whoami).str``
 * Has all string methods i.e. the ``$().find(txt)`` will return ``str(self).find(txt)``.
 * Has all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in self]``.
-* *[Discussed] Potentially has ``lines(sep)`` method to return the lines splitted by ``sep`` i.e. ``fields = $(cat table.txt).lines('|')``*
-* *[Discussed] Potentially has ``words`` property to return the same as ``@$()`` operator and replace it*
-* *[Discussed] Potentially has ``out``/``output``/``o`` property to return the same as ``!()`` operator and replace it*
+
+* *[Discussed]* Potentially has ``lines(sep)`` method to return the lines splitted by ``sep`` i.e. ``fields = $(cat table.txt).lines('|')``
+* *[Discussed]* Potentially has ``words`` property to return the same as ``@$()`` operator and replace it
+* *[Discussed]* Potentially has ``out``/``output``/``o`` property to return the same as ``!()`` operator and replace it
 
 In subprocess mode the ``$()`` operator returns ``OutputLines`` object that becomes the list of lines.
 
