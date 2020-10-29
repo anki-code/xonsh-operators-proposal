@@ -188,7 +188,7 @@ Questions
    Answer:
 
    In this approach the setting of the complex splitting algorithm belongs to ``!()`` operator
-   that represents the pure output. It's assumed that the user should use ``@(!(cat file).split('-|-'))``
+   that represents the pure output. It's assumed that the user should use ``@(!(cmd).split('-|-'))``
    approach for complex cases.
 
 2. From @anki-code: Can we use one operator ``$()`` and completely remove ``!()`` by moving the ``!()`` object
