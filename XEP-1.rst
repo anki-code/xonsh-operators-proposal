@@ -4,7 +4,7 @@
   * - XEP:
     - 1
   * - Title:
-    - Xonsh Operators Proposal
+    - Xonsh Operators Proposal - Three operator approach
   * - Author:
     - anki-code
   * - Status:

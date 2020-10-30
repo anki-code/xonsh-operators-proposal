@@ -2,9 +2,9 @@
 .. list-table::
 
   * - XEP:
-    - 1
+    - 2
   * - Title:
-    - Xonsh Operators Proposal
+    - Xonsh Operators Proposal - Single operator approach
   * - Author:
     - anki-code
   * - Status:
