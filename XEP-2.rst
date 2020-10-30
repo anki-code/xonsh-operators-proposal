@@ -40,7 +40,7 @@ Approach
 
 Merge ``$()`` and ``!()`` operators into one ``$()`` operator and remove ``!()``.
 
-*OR alternative with backwards compatibility:*
+*Alternative with backwards compatibility:*
 
 Merge ``!()`` and ``$()`` operators as described in the proposal into new operator.
 Add deprecation warnings to old operators and remove them after time i.e. with xonsh 1.0 release.
