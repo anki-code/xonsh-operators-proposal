@@ -79,7 +79,7 @@ Operators changes:
       - ``![]`` exists.
       - ``![]`` removed.
 
-``CommandPipeline`` (short ``CP``) class changes:
+``CommandPipeline`` (``CP``) class changes:
 
 * Remove trailing new lines in ``CP.lines``.
 * Add ``str`` representation as ``os.sep.join(CP.lines)``.
