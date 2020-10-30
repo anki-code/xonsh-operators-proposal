@@ -58,17 +58,20 @@ Operators changes:
     * - Current
       - Proposed
 
-    * - ``$()`` returns output string.
+    * - ``$()`` returns output string in python mode.
       - ``$()`` returns ``CommandPipeline`` object.
 
-    * - ``$[]`` returns ``None``.
-      - ``$[]`` returns ``HiddenCommandPipeline`` object.
+    * - ``$()`` returns output string in subproc mode.
+      - ``$()`` returns list of lines from output in subproc mode.
+
+    * - ``$[]`` returns ``None`` in python mode.
+      - ``$[]`` returns ``HiddenCommandPipeline`` object in python mode.
 
     * - ``!()`` returns ``CommandPipeline``.
-      - ``!()`` removed.
+      - ``!()`` removed both in subproc and python.
 
     * - ``![]`` returns ``HiddenCommandPipeline``.
-      - ``![]`` removed.
+      - ``![]`` removed both in subproc and python.
 
 ``CommandPipeline`` (short ``CP``) class changes:
 
