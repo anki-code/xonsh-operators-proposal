@@ -181,7 +181,7 @@ What will be broken after update:
     * - Case
       - Fix
 
-    * - Using ``!()`` or ``$[]``.
+    * - Using ``!()`` or ``![]``.
 
       - Replace to ``$()`` or ``$[]``.
 
