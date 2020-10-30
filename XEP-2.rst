@@ -89,7 +89,7 @@ Operators changes:
 * Add all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in CP.lines]``.
 
 * *Optionally*. Add ``CP.o`` property as shortcut to access to ``output``.
-* *Optionally*. Add ``words`` property to return the same as ``@$()`` and make alternative.
+* *Optionally*. Add ``CP.words`` property to return the same as ``@$()`` and make alternative.
 
 Git-branch with changes
 ***********************
