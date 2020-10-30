@@ -45,6 +45,8 @@ Quick examples
 
 .. image:: xop-2.png
 
+The source in `XEP-2-examples.xsh <XEP-2-examples.xsh>`_.
+
 Changes
 *******
 
