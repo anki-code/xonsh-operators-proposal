@@ -164,7 +164,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
 
 
-Feel free to suggest your use cases.
+Feel free to [suggest your use cases](https://github.com/anki-code/xonsh-operators-proposal/issues).
 
 OutputLines object
 ******************
