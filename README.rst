@@ -5,7 +5,7 @@ Xonsh Enrichment Proposals (XEP)
 .. list-table::
     :header-rows: 1
 
-    * - Date
+    * - Creation Date
       - State
       - Link
       - Description
