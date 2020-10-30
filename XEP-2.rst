@@ -55,23 +55,29 @@ Operators changes:
 .. list-table::
     :header-rows: 1
 
-    * - Current
+    * - Mode
+      - Current
       - Proposed
 
-    * - ``$()`` returns output string in python mode.
+    * - Python
+      - ``$()`` returns output string.
       - ``$()`` returns ``CommandPipeline`` object.
 
-    * - ``$()`` returns output string in subproc mode.
-      - ``$()`` returns list of lines from output in subproc mode.
+    * - Subproc
+      - ``$()`` returns output string.
+      - ``$()`` returns list of lines from output.
 
-    * - ``$[]`` returns ``None`` in python mode.
-      - ``$[]`` returns ``HiddenCommandPipeline`` object in python mode.
+    * - Python
+      - ``$[]`` returns ``None``.
+      - ``$[]`` returns ``HiddenCommandPipeline`` object.
 
-    * - ``!()`` returns ``CommandPipeline``.
-      - ``!()`` removed both in subproc and python.
+    * - Both
+      - ``!()`` exists.
+      - ``!()`` removed.
 
-    * - ``![]`` returns ``HiddenCommandPipeline``.
-      - ``![]`` removed both in subproc and python.
+    * - Both
+      - ``![]`` exists.
+      - ``![]`` removed.
 
 ``CommandPipeline`` (short ``CP``) class changes:
 
