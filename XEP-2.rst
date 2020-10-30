@@ -94,7 +94,8 @@ Operators changes:
 Github repository
 *****************
 
-There is Github repo that has changes to implement the XEP-2 approach. Install and try:
+There is Github repo `xonsh-xep-2 <https://github.com/anki-code/xonsh-xep-2>`_ that is fork from original xonsh repository
+that has changes to implement the XEP-2 approach. Install and try:
 
 .. code-block:: bash
 
