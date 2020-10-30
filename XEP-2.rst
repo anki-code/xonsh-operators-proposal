@@ -152,7 +152,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
       - The similar as python mode.
       - ``shell = $(head -n1 /etc/passwd)[:-1].split(':').pop()``
 
-        ``shell = $(head -n1 /etc/passwd)[0].split(':')``
+        ``shell = $(head -n1 /etc/passwd).str.split(':').pop()``
 
     * - Apply string function to every line.
 
