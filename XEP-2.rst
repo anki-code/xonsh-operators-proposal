@@ -38,7 +38,12 @@ functionality and to achieve the real improvement of syntax and logic it require
 Approach
 ********
 
-The idea is to merge ``!()`` and ``$()`` operators into one ``$()`` operator.
+Merge ``$()`` and ``!()`` operators into one ``$()`` operator and remove ``!()``.
+
+*OR alternative with backwards compatibility:*
+
+Merge ``!()`` and ``$()`` operators as described in the proposal into new operator.
+Add deprecation warnings to old operators and remove them operators after time.
 
 Quick examples
 **************
