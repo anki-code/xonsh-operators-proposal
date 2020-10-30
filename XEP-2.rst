@@ -129,8 +129,6 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
     * - Get pure output.
 
-        🔀️ More text.
-
       - ``echo -n $(curl https://xon.sh) | wc -c``
       
         ``echo -n @($(curl https://xon.sh).output) | wc -c``
@@ -139,8 +137,6 @@ The table of use cases compares the syntax of the current xonsh and the proposed
         ``html = $(curl https://xon.sh).output``
 
     * - Custom output splitting.
-
-        🔀 Becomes clearer.
 
       - The similar as python mode.
       - ``shell = $(head -n1 /etc/passwd)[:-1].split(':').pop()``
