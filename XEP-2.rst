@@ -70,7 +70,7 @@ Operators changes:
 
 ``CommandPipeline`` (short ``CP``) class changes:
 
-* Remove trailing new lines in ``CP.lines``
+* Remove trailing new lines in ``CP.lines``.
 * Add ``str`` representation as ``os.sep.join(CP.lines)``.
 * Add ``str`` property to short access i.e. ``name = $(whoami).str``.
 * Add ``lines(sep)`` method (IFS-alternative) to return the lines splitted by ``sep`` i.e. ``fields = $(head table.txt).lines('|')``.
@@ -194,7 +194,7 @@ What will be broken after update:
 
         TypeError: the JSON object must be str. List given.
 
-      - Replace ``$()`` to ``!()`` or use ``$().str``.
+      - Replace ``$()`` to ``$().str``.
 
     * - Using ``$()`` as string i.e. ``@(char for l in $(ls))``
 
