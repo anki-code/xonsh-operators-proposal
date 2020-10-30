@@ -72,12 +72,12 @@ Operators changes:
 
 * Remove trailing new lines in ``CP.lines``.
 * Add ``str`` representation as ``os.sep.join(CP.lines)``.
-* Add ``str`` property to short access i.e. ``name = $(whoami).str``.
+* Add ``CP.str`` property to short access i.e. ``name = $(whoami).str``.
 * Add ``CP.tokens(sep)`` method (IFS-alternative) to return the lines splitted by ``sep`` i.e. ``fields = $(head table.txt).tokens('|')``.
 * Add all string methods i.e. the ``$().find(txt)`` will return ``CP.str.find(txt)``.
 * Add all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in CP.lines]``.
 
-* *Optionally*. Add ``o`` property as shortcut to access to ``output``.
+* *Optionally*. Add ``CP.o`` property as shortcut to access to ``output``.
 * *Optionally*. Add ``words`` property to return the same as ``@$()`` and make alternative.
 
 Git-branch with changes
