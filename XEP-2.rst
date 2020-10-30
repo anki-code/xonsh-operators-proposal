@@ -214,14 +214,9 @@ Questions
    but it would necessitate the addition of some default or configurable way to split those arguments.
    For example, should $() be split by lines or by whitespace (like effectively what Bash does)?
 
-   **Answer**: In this approach the complex splitting algorithm could be implemented with ``$().output`` or ``$().str``
-   i.e. ``@($(head -n1 /etc/passw).str.split(':'))``.
+   **Answer**: To get different separation than default: ``$().lines(sep)``.
 
-3. From @scopatz: What happens with the other subprocess operators depending on their calling modes: ![], !(), $[]
-
-   **Answer**: ``$[]`` return
-
-4. From @scopatz: What do we do with the @$() operator? The initial idea for @$() what that you could register
+2. From @scopatz: What do we do with the @$() operator? The initial idea for @$() what that you could register
    transformation functions (like a decorator), that would modify output. For example, @upper$() would uppercase
    the output. Or you could apply many times, like @split@upper(). Then what we have now would just be the default
    value: @split$() == @$(). However, this was never fully done, so maybe it is better to drop the syntax entirely.
