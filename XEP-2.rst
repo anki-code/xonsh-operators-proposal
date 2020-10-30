@@ -91,8 +91,8 @@ Operators changes:
 * *Optionally*. Add ``CP.o`` property as shortcut to access to ``output``.
 * *Optionally*. Add ``CP.words`` property to return the same as ``@$()`` and make alternative.
 
-Git repo
-********
+Github repository
+*****************
 
 There is Github repo that has changes to implement the XEP-2 approach. Install and try:
 
