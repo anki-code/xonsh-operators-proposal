@@ -10,6 +10,8 @@ echo -e 'first line\nsecond line\n' > 'file with space'
 
 ./args.xsh $(ls)
 
+du -sh $(ls)
+
 ./args.xsh @($(ls).str)
 
 $(ls)
