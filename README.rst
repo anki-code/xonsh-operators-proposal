@@ -13,7 +13,7 @@ Xonsh Enrichment Proposals (XEP)
     * - 2020-10-30
       - Draft
       - `XEP-2 <XEP-2.rst>`_
-      - Alternative to XEP-1 that based on the idea of one operator.
+      - Better alternative to XEP-1 that based on the idea of one operator.
 
     * - 2020-10-24
       - Draft
