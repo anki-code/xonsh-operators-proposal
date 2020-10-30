@@ -91,15 +91,18 @@ Operators changes:
 * *Optionally*. Add ``CP.o`` property as shortcut to access to ``output``.
 * *Optionally*. Add ``CP.words`` property to return the same as ``@$()`` and make alternative.
 
-Git-branch with changes
-***********************
+Git repo with first start
+*************************
 
-To trying the changes install xonsh from branch:
+To trying the changes install xonsh from the special repository:
 
 .. code-block:: bash
 
-    pip install -U git+https://github.com/anki-code/xonsh.git@xop-v2
+    pip install -U git+https://github.com/anki-code/xonsh-xep-2
     xonsh --no-rc
+
+Feel free to make pull requests or create issues in the `xonsh-xep-2 <https://github.com/anki-code/xonsh-xep-2>`_
+repo if you like the XEP-2 approach.
 
 How will the use cases change
 *****************************
