@@ -91,7 +91,7 @@ How will the use cases change
 
 The table of use cases compares the syntax of the current xonsh and the proposed.
 
-`Switch the page to the better view <https://github.com/anki-code/xonsh-operators-proposal/blob/main/README.rst#how-will-the-use-cases-change>`_ for more comfortable reading the table:
+`Switch the page to the better view <https://github.com/anki-code/xonsh-operators-proposal/blob/main/XEP-1.rst#how-will-the-use-cases-change>`_ for more comfortable reading the table:
 
 .. list-table::
     :widths: 5 30 60
