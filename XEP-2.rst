@@ -193,7 +193,7 @@ What will be broken after update:
 
       - Replace ``$()`` to ``$().str``.
 
-    * - Using ``$()`` as string i.e. ``@(char for l in $(ls))``
+    * - Using ``$()`` as string i.e. ``@(char for l in $(ls))``.
 
       - Replace ``$()`` to ``$().str`` or ``$().output``.
 
@@ -202,7 +202,7 @@ What will be broken after update:
 What will not be broken after update:
 
 * String function calls i.e. ``$(whoami).strip()``, ``$(ls).split('\n')``.
-* Simple conditions i.e. `if $(date | grep 59):`
+* Simple conditions i.e. ``if $(date | grep 59):``.
 
 Questions
 *********
