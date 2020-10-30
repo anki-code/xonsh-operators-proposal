@@ -73,7 +73,7 @@ Operators changes:
 * Remove trailing new lines in ``CP.lines``.
 * Add ``str`` representation as ``os.sep.join(CP.lines)``.
 * Add ``str`` property to short access i.e. ``name = $(whoami).str``.
-* Add ``lines(sep)`` method (IFS-alternative) to return the lines splitted by ``sep`` i.e. ``fields = $(head table.txt).lines('|')``.
+* Add ``tokens(sep)`` method (IFS-alternative) to return the lines splitted by ``sep`` i.e. ``fields = $(head table.txt).tokens('|')``.
 * Add all string methods i.e. the ``$().find(txt)`` will return ``CP.str.find(txt)``.
 * Add all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in CP.lines]``.
 * *Optionally*. Add ``words`` property to return the same as ``@$()`` and make alternative.
@@ -214,7 +214,7 @@ Questions
    but it would necessitate the addition of some default or configurable way to split those arguments.
    For example, should $() be split by lines or by whitespace (like effectively what Bash does)?
 
-   **Answer**: To get different separation than default: ``$().lines(sep)``.
+   **Answer**: To get different separation than default: ``$().tokens(sep)``.
 
 2. From @scopatz: What do we do with the @$() operator? The initial idea for @$() what that you could register
    transformation functions (like a decorator), that would modify output. For example, @upper$() would uppercase
