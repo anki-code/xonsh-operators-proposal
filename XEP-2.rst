@@ -80,14 +80,19 @@ Operators changes:
 ``CommandPipeline`` (``CP``) class changes:
 
 * Remove trailing new lines in ``CP.lines``.
+
 * Add ``str`` representation as ``os.sep.join(CP.lines)``.
+
 * Add ``CP.str`` property to short access i.e. ``name = $(whoami).str``.
-* Add ``CP.tokens(sep)`` method to describe splitting explicitly and return the lines splitted by ``sep``
-  i.e. ``fields = $(head table.txt).tokens('|')``. It's an `IFS <https://bash.cyberciti.biz/guide/$IFS>`_ alternative.
+
 * Add all string methods i.e. the ``$().find(txt)`` will return ``CP.str.find(txt)`` or ``CP.output.find(txt)``.
+  Note that ``CP.split()`` method will replace old ``$().split()`` use case
+  that is `IFS <https://bash.cyberciti.biz/guide/$IFS>`_ analogue in fact.
+
 * Add all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in CP.lines]``.
 
 * *Optionally*. Add ``CP.o`` property as shortcut to access to ``output``.
+
 * *Optionally*. Add ``CP.words`` property to return the same as ``@$()`` and make alternative.
 
 Quick examples
