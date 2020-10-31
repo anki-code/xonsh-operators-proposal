@@ -249,16 +249,15 @@ Questions
    but it would necessitate the addition of some default or configurable way to split those arguments.
    For example, should $() be split by lines or by whitespace (like effectively what Bash does)?
 
-   **Answer**: To get different separation than default: ``$().tokens(sep)``.
+   **Answer**: To get IFS-like custom separation: ``$().split()``.
 
 2. From @scopatz: What do we do with the @$() operator? The initial idea for @$() what that you could register
    transformation functions (like a decorator), that would modify output. For example, @upper$() would uppercase
    the output. Or you could apply many times, like @split@upper(). Then what we have now would just be the default
    value: @split$() == @$(). However, this was never fully done, so maybe it is better to drop the syntax entirely.
 
-   **Answer**: Probably we can replace it to something like ``@($().words)`` but it's new syntax overhead and
-   new backwards compatibility issue. We'll think about dropping ``@$()`` on final stages of this proposal
-   detalization.
+   **Answer**: Probably we can replace it to something like ``@($().words)``.
+   I suggest to think about dropping ``@$()`` on final stages. Feel free to create an issue for talking.
 
 3. From @laloch: What about leading and trailing whitespace around the ``$()`` operator?
    Can you do ``mkdir -p /tmp/$(whoami)/garbage``?
