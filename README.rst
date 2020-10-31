@@ -20,3 +20,7 @@ Xonsh Enrichment Proposals (XEP)
       - `XEP-1 <XEP-1.rst>`_
       - Based on the idea of three operators.
 
+
+Links
+-----
+* `PEP 1 -- PEP Purpose and Guidelines <https://www.python.org/dev/peps/pep-0001/>`_
