@@ -89,7 +89,8 @@ Operators changes:
 * Remove trailing new lines in ``CP.lines``.
 * Add ``str`` representation as ``os.sep.join(CP.lines)``.
 * Add ``CP.str`` property to short access i.e. ``name = $(whoami).str``.
-* Add ``CP.tokens(sep)`` method (IFS-alternative) to return the lines splitted by ``sep`` i.e. ``fields = $(head table.txt).tokens('|')``.
+* Add ``CP.tokens(sep)`` method to describe splitting explicitly and return the lines splitted by ``sep``
+  i.e. ``fields = $(head table.txt).tokens('|')``. It's an `IFS <https://bash.cyberciti.biz/guide/$IFS>`_ alternative.
 * Add all string methods i.e. the ``$().find(txt)`` will return ``CP.str.find(txt)``.
 * Add all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in CP.lines]``.
 
