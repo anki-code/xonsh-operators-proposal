@@ -91,7 +91,7 @@ Operators changes:
 * Add ``CP.str`` property to short access i.e. ``name = $(whoami).str``.
 * Add ``CP.tokens(sep)`` method to describe splitting explicitly and return the lines splitted by ``sep``
   i.e. ``fields = $(head table.txt).tokens('|')``. It's an `IFS <https://bash.cyberciti.biz/guide/$IFS>`_ alternative.
-* Add all string methods i.e. the ``$().find(txt)`` will return ``CP.str.find(txt)``.
+* Add all string methods i.e. the ``$().find(txt)`` will return ``CP.str.find(txt)`` or ``CP.output.find(txt)``.
 * Add all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in CP.lines]``.
 
 * *Optionally*. Add ``CP.o`` property as shortcut to access to ``output``.
