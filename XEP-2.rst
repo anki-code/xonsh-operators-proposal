@@ -260,7 +260,10 @@ Questions
    new backwards compatibility issue. We'll think about dropping ``@$()`` on final stages of this proposal
    detalization.
 
+3. From @laloch: What about leading and trailing whitespace around the ``$()`` operator?
+   Can you do ``mkdir -p /tmp/$(whoami)/garbage``?
 
+   **Answer**: `Detailed answer <https://github.com/anki-code/xonsh-operators-proposal/issues/2#issuecomment-720000359>`_.
 
 Proposals to this proposal
 **************************
