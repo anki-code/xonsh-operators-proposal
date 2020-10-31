@@ -194,9 +194,8 @@ Backwards compatibility
 Approach A1 releasing scenario
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To achieve smooth releasing this proposal suggests to start versioning xonsh packages the similar way as Python versioning.
-Create distinct PyPi/Conda package with name ``xonsh-1.0``. All previous users will stay on ``xonsh`` package.
-New users will install ``xonsh-1.0`` package with the changes from this proposal.
+To achieve smooth releasing this proposal suggests to start versioning xonsh the similar way as Python.
+Create distinct xonsh version - ``xonsh2`` - with changes from this proposal.
 
 Approach A1: breaking changes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
