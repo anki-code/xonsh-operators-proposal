@@ -81,7 +81,7 @@ Operators changes:
 
 * Remove trailing new lines in ``CP.lines``.
 
-* Add ``str`` representation as ``os.sep.join(CP.lines)``.
+* Add ``str`` representation as ``"\n".join(CP.lines)``.
 
 * Add ``CP.str`` property to short access i.e. ``name = $(whoami).str``.
 
