@@ -191,6 +191,7 @@ Feel free to `suggest your use cases <https://github.com/anki-code/xonsh-operato
 Backwards compatibility
 ***********************
 
+If the way to merge ``$()`` and ``!()`` operators into one ``$()`` operator will be chosen.
 What will be broken after update:
 
 .. list-table::
