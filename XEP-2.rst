@@ -38,11 +38,11 @@ functionality and to achieve the real improvement of syntax and logic it require
 Approach
 ********
 
-Merge ``$()`` and ``!()`` operators into one ``$()`` operator and remove ``!()``.
+A1. Merge ``$()`` and ``!()`` operators into one ``$()`` operator and remove ``!()``.
 
 *Alternative with backwards compatibility:*
 
-Merge ``!()`` and ``$()`` operators as described in the proposal into new operator.
+A2. Merge ``!()`` and ``$()`` operators as described in the proposal into new operator.
 Add deprecation warnings to old operators and remove them after time i.e. with xonsh 1.0 release.
 
 Changes
@@ -191,7 +191,16 @@ Feel free to `suggest your use cases <https://github.com/anki-code/xonsh-operato
 Backwards compatibility
 ***********************
 
-If the way to merge ``$()`` and ``!()`` operators into one ``$()`` operator will be chosen.
+Approach A1 releasing scenario
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To achieve smooth releasing this proposal suggest start versioning xonsh packages the similar way as Python versioning.
+Create distinct PyPi/Conda package with name ``xonsh-1.0``. All previous users will stay on ``xonsh`` package.
+New users will install ``xonsh-1.0`` package with the changes from this proposal.
+
+Approach A1: breaking changes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 What will be broken after update:
 
 .. list-table::
@@ -223,6 +232,11 @@ What will not be broken after update:
 
 * String function calls i.e. ``$(whoami).strip()``, ``$(ls).split('\n')``.
 * Simple conditions i.e. ``if $(date | grep 59):``.
+
+
+Approach A2
+~~~~~~~~~~~
+Full backwards compatibility.
 
 Questions
 *********
