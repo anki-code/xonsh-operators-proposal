@@ -45,13 +45,6 @@ Merge ``$()`` and ``!()`` operators into one ``$()`` operator and remove ``!()``
 Merge ``!()`` and ``$()`` operators as described in the proposal into new operator.
 Add deprecation warnings to old operators and remove them after time i.e. with xonsh 1.0 release.
 
-Quick examples
-**************
-
-.. image:: xop-2.png
-
-The source in `XEP-2-examples.xsh <XEP-2-examples.xsh>`_.
-
 Changes
 *******
 
@@ -96,6 +89,13 @@ Operators changes:
 
 * *Optionally*. Add ``CP.o`` property as shortcut to access to ``output``.
 * *Optionally*. Add ``CP.words`` property to return the same as ``@$()`` and make alternative.
+
+Quick examples
+**************
+
+.. image:: xop-2.png
+
+The source in `XEP-2-examples.xsh <XEP-2-examples.xsh>`_.
 
 Github repository
 *****************
