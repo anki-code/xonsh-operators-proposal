@@ -38,7 +38,7 @@ functionality and to achieve the real improvement of syntax and logic it require
 Approach
 ********
 
-Merge ``$()`` and ``!()`` operators into one ``$()`` operator and remove ``!()``.
+Merge ``$()`` and ``!()`` operators into one ``$()`` operator and remove ``!()`` with ``![]``.
 
 Changes
 *******
