@@ -251,7 +251,7 @@ Questions
    but it would necessitate the addition of some default or configurable way to split those arguments.
    For example, should $() be split by lines or by whitespace (like effectively what Bash does)?
 
-   **Answer**: To get IFS-like custom separation: ``$().split()``.
+   **Answer**: To get IFS-like custom separation: ``groups = $(groups).split()``.
 
 2. From @scopatz: What do we do with the @$() operator? The initial idea for @$() what that you could register
    transformation functions (like a decorator), that would modify output. For example, @upper$() would uppercase
