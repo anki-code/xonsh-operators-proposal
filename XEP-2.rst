@@ -207,6 +207,11 @@ Create distinct xonsh version - ``xonsh2`` - with changes from this proposal.
 Approach A1: breaking changes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+What will continue working after update:
+
+* String function calls i.e. ``$(whoami).strip()``, ``$(ls).split('\n')``.
+* Simple conditions i.e. ``if $(date | grep 59):``.
+
 What will be broken after update:
 
 .. list-table::
@@ -231,13 +236,6 @@ What will be broken after update:
     * - Using ``$()`` as string i.e. ``@(char for l in $(ls))``.
 
       - Replace ``$()`` to ``$().str`` or ``$().output``.
-
-
-
-What will not be broken after update:
-
-* String function calls i.e. ``$(whoami).strip()``, ``$(ls).split('\n')``.
-* Simple conditions i.e. ``if $(date | grep 59):``.
 
 
 Approach A2
