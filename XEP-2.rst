@@ -8,7 +8,7 @@
   * - Author:
     - anki-code
   * - Status:
-    - Draft
+    - Ready to review
   * - Created:
     - 2020-10-30
   * - Xonsh-Version:
@@ -225,6 +225,7 @@ Questions
 
 Proposals to this proposal
 **************************
+
 There are two degrees of freedom:
 
 * Setting different behavior of the operator in subproc and python mode.

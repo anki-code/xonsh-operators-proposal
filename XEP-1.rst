@@ -8,7 +8,7 @@
   * - Author:
     - anki-code
   * - Status:
-    - Draft
+    - Stopped with `XEP-2 <XEP-2.rst>`_ appearing
   * - Created:
     - 2020-10-24
   * - Xonsh-Version:
