@@ -105,11 +105,9 @@ The source in `XEP-2-examples.xsh <XEP-2-examples.xsh>`_.
 Github repository
 *****************
 
-There is Github repo `xonsh2 <https://github.com/anki-code/xonsh2>`_ that is fork from original xonsh repository
-that has changes to implement the XEP-2 approach.
-
-This xonsh fork was created by `my-xonsh-fork <https://github.com/anki-code/my-xonsh-fork>`_ and not affect your
-host xonsh installation. So you can run `xonsh2`, create `.xonshrc_2` or add it to shebang without concerns.
+There is Github repo `xonsh2 <https://github.com/anki-code/xonsh2>`_ that was built by `my-xonsh-fork <https://github.com/anki-code/my-xonsh-fork>`_
+from `xonsh-xep-2 <https://github.com/anki-code/xonsh-xep-2>`_ repository that has XEP-2 changes. The installation of ``xonsh2``
+will not affect your host xonsh installation. So you can run ``xonsh2``, create ``.xonshrc_2`` or add it to shebang without concerns.
 
 Install and try:
 
@@ -119,7 +117,7 @@ Install and try:
     xonsh2
 
 Feel free to make pull requests or create issues in the `xonsh-xep-2 <https://github.com/anki-code/xonsh-xep-2>`_
-repo if you like the XEP-2 approach.
+repository if you like the XEP-2 approach.
 
 How will the use cases change
 *****************************
