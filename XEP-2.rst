@@ -38,12 +38,7 @@ functionality and to achieve the real improvement of syntax and logic it require
 Approach
 ********
 
-A1. Merge ``$()`` and ``!()`` operators into one ``$()`` operator and remove ``!()``.
-
-*Alternative with backwards compatibility:*
-
-A2. Merge ``!()`` and ``$()`` operators as described in the proposal into new operator.
-Add deprecation warnings to old operators and remove them after time i.e. with xonsh 1.0 release.
+Merge ``$()`` and ``!()`` operators into one ``$()`` operator and remove ``!()``.
 
 Changes
 *******
@@ -201,49 +196,8 @@ Feel free to `suggest your use cases <https://github.com/anki-code/xonsh-operato
 Backwards compatibility
 ***********************
 
-Approach A1 releasing scenario
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 To achieve smooth releasing this proposal suggests to start versioning xonsh the similar way as Python.
 Create distinct xonsh version - ``xonsh2`` - with changes from this proposal.
-
-Approach A1: breaking changes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-What will continue working after update:
-
-* String function calls i.e. ``$(whoami).strip()``, ``$(ls).split('\n')``.
-* Simple conditions i.e. ``if $(date | grep 59):``.
-
-What will be broken after update:
-
-.. list-table::
-    :widths: 70 29
-    :header-rows: 1
-
-    * - Case
-      - Fix
-
-    * - Using ``!()`` or ``![]``.
-
-      - Replace to ``$()`` or ``$[]``.
-
-    * - Functions that expect string but not convert the argument to string representation:
-
-        ``json.loads($(curl https://api.github.com/orgs/xonsh))``
-
-        TypeError: the JSON object must be str. List given.
-
-      - Replace ``$()`` to ``$().str``.
-
-    * - Using ``$()`` as string i.e. ``@(char for l in $(ls))``.
-
-      - Replace ``$()`` to ``$().str`` or ``$().output``.
-
-
-Approach A2
-~~~~~~~~~~~
-Full backwards compatibility.
 
 Questions
 *********
