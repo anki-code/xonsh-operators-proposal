@@ -74,7 +74,7 @@ Operators changes:
 
 ``CommandPipeline`` (``CP``) class changes:
 
-* Remove trailing new lines in ``CP.lines`` and ``__iter__``.
+* Remove trailing new lines in ``CP.lines`` and in ``__iter__``.
 
 * Add all string methods i.e. the ``$().find(txt)`` will return ``CP.out.find(txt)``.
   Note that ``CP.split()`` method will replace old ``$().split()`` use case
