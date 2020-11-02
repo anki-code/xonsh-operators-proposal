@@ -58,7 +58,7 @@ Operators changes:
 
     * - Subproc
       - ``$()`` returns output string.
-      - ``$()`` returns list of lines from output.
+      - ``$()`` returns list of lines from output without trailing new line symbol.
 
     * - Python
       - ``$[]`` returns ``None``.
@@ -74,19 +74,13 @@ Operators changes:
 
 ``CommandPipeline`` (``CP``) class changes:
 
-* Remove trailing new lines in ``CP.lines``.
+* Remove trailing new lines in ``CP.lines`` and ``__iter__``.
 
-* Add ``str`` representation as ``"\n".join(CP.lines)``.
-
-* Add ``CP.str`` property to short access i.e. ``name = $(whoami).str``.
-
-* Add all string methods i.e. the ``$().find(txt)`` will return ``CP.str.find(txt)`` or ``CP.output.find(txt)``.
+* Add all string methods i.e. the ``$().find(txt)`` will return ``CP.out.find(txt)``.
   Note that ``CP.split()`` method will replace old ``$().split()`` use case
   that is `IFS <https://bash.cyberciti.biz/guide/$IFS>`_ analogue in fact.
 
 * Add all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in CP.lines]``.
-
-* *Optionally*. Add ``CP.o`` property as shortcut to access to ``output``.
 
 * *Optionally*. Add ``CP.words`` property to return the same as ``@$()`` and make alternative.
 
@@ -138,7 +132,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
         ``id $(whoami)``
       - ``name = $(whoami).rstrip()``     
             
-        ``name = $(whoami).str``
+        ``name = $(whoami).out``
         
     * - Get multiple arguments.
 
@@ -155,10 +149,10 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
       - ``echo -n $(curl https://xon.sh) | wc -c``
       
-        ``echo -n @($(curl https://xon.sh).output) | wc -c``
+        ``echo -n @($(curl https://xon.sh).out) | wc -c``
       - ``html = $(curl https://xon.sh)``     
             
-        ``html = $(curl https://xon.sh).output``
+        ``html = $(curl https://xon.sh).out``
 
     * - Custom output splitting.
 
