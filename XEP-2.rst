@@ -216,7 +216,8 @@ Questions
    value: @split$() == @$(). However, this was never fully done, so maybe it is better to drop the syntax entirely.
 
    **Answer**: Probably we can replace it to something like ``@($().words)``.
-   I suggest to think about dropping ``@$()`` on final stages. Feel free to create an issue for talking.
+   If you really want to drop the ``@$()`` operator let's think about it on final stages of this proposal discussing.
+   Feel free to create an issue for talking.
 
 3. From @laloch: What about leading and trailing whitespace around the ``$()`` operator?
    Can you do ``mkdir -p /tmp/$(whoami)/garbage``?
