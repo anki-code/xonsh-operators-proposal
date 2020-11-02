@@ -223,13 +223,3 @@ Questions
 
    **Answer**: `Detailed answer <https://github.com/anki-code/xonsh-operators-proposal/issues/2#issuecomment-720000359>`_.
 
-Proposals to this proposal
-**************************
-
-There are two degrees of freedom:
-
-* Setting different behavior of the operator in subproc and python mode.
-* Returning the Python object from the operator that has an ability to return list or str representations and has any
-  functions and properties.
-
-Current proposal could be improved by suggestion with more optimal or useful properties of the objects that were returned by operators.
