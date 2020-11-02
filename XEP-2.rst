@@ -76,7 +76,7 @@ Operators changes:
 
 * Add ``str`` representation the same as ``CP.out``.
 
-* Remove trailing new lines in ``CP.lines`` and in ``__iter__``.
+* Remove trailing new lines in ``CP.lines`` and in ``CP.__iter__``.
 
 * Add all string methods i.e. the ``$().find(txt)`` will return ``CP.out.find(txt)``.
   Note that ``CP.split()`` method will replace old ``$().split()`` use case
