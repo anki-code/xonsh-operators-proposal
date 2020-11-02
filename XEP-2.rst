@@ -82,8 +82,6 @@ Operators changes:
 
 * Add all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in CP.lines]``.
 
-* *Optionally*. Add ``CP.words`` property to return the same as ``@$()`` and make alternative.
-
 Quick examples
 **************
 
@@ -209,7 +207,7 @@ Questions
    the output. Or you could apply many times, like @split@upper(). Then what we have now would just be the default
    value: @split$() == @$(). However, this was never fully done, so maybe it is better to drop the syntax entirely.
 
-   **Answer**: Probably we can replace it to something like ``@($().words)``.
+   **Answer**: Probably we can replace it to something like ``@($().words)`` or leave it unchanged as syntax sugar.
    If you really want to drop the ``@$()`` operator let's think about it on final stages of this proposal discussing.
    Feel free to create an issue for talking.
 
