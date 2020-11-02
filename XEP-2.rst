@@ -80,7 +80,7 @@ Operators changes:
 
 * Add all string methods i.e. the ``$().find(txt)`` will return ``CP.out.find(txt)``.
 
-  * Note that ``CP.split()`` method will replace old ``$().split()`` use case
+  * Note ``CP.split()`` method will save old ``$().split()`` use case
     that is `IFS <https://bash.cyberciti.biz/guide/$IFS>`_ analogue in fact.
 
 * Add all string methods for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in CP.lines]``.
