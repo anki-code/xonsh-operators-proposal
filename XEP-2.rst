@@ -79,10 +79,7 @@ Operators changes:
 * Remove trailing new lines in ``CP.lines`` and in ``CP.__iter__``.
 
 * Add all `string methods <https://docs.python.org/3/library/stdtypes.html#string-methods>`_
-  i.e. the ``$().find(txt)`` will return ``CP.out.find(txt)``.
-
-  * Note ``CP.split()`` method will save old ``$().split()`` use case
-    that is `IFS <https://bash.cyberciti.biz/guide/$IFS>`_ analogue in fact.
+  i.e. the ``$().split()`` will return ``CP.out.split()`` that is `IFS <https://bash.cyberciti.biz/guide/$IFS>`_ analogue in fact.
 
 * Add all `string methods <https://docs.python.org/3/library/stdtypes.html#string-methods>`_
   for lines i.e. ``$().lines_find(txt)`` will return ``[l.find(txt) for l in CP.lines]``.
