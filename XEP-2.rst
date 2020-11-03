@@ -174,13 +174,25 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
     * - ``grep`` single argument.
 
-        ✅ Fix the bug.
+        ✅ Fixed the bug.
 
       - ``cat /etc/passwd | grep $(whoami)``
 
         Wrong output of all lines in current version.
 
         One correct single line after update.
+
+      - Not applicable.
+
+    * - Python substitution.
+
+        ✅ Fixed the substitution expectations.
+
+      - ``mkdir /tmp/@($(whoami))/dir``
+
+        Unwanted new line in the directory name in current version.
+
+        The name of the directory as expected (also in case it has spaces).
 
       - Not applicable.
 
