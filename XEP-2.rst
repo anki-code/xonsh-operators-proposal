@@ -182,7 +182,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
         Wrong output of all lines in current version.
 
-        One correct single line after update.
+        One correct single line in XEP-2.
 
       - Not applicable.
 
@@ -194,7 +194,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
         Unwanted new line in the directory name in current version.
 
-        The name of the directory as expected (also in case it has spaces).
+        The name of the directory as expected (also in case it has spaces) in XEP-2.
 
       - Not applicable.
 
