@@ -12,13 +12,13 @@ echo -e 'first line\nsecond line\n' > 'file with space'
 
 du -sh $(ls)
 
-./args.xsh @($(ls).str)
+./args.xsh @($(ls).out)
 
 $(ls)
 
 $[ls]
 
-./args.xsh @($(head -n1 /etc/passwd).str.split(':'))
+./args.xsh @($(head -n1 /etc/passwd).split(':'))
 
 for f in $(ls):
     print(f)
