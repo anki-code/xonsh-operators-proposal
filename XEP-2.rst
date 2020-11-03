@@ -113,7 +113,7 @@ repository if you like the XEP-2 approach.
 How will the use cases change
 *****************************
 
-The table of use cases compares the syntax of the current xonsh and the proposed.
+The table of use cases compares the syntax of the current xonsh and the proposed (first line and second line accordingly):
 
 .. list-table::
     :widths: 5 30 60
