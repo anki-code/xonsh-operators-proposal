@@ -204,7 +204,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
       - Remember the meaning of ``$[]``, ``!()``, ``$[]``, ``![]`` and the difference in current version.
 
-        One ``$`` operator with auto suggestion and named properties and functions in XEP-2.
+        One ``$`` operator with auto suggestion and named properties and methods in XEP-2.
 
       - The same as subproc.
 
