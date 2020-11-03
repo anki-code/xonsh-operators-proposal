@@ -76,7 +76,7 @@ Operators changes:
 
 * Add ``str`` representation the same as ``CP.out``.
 
-* Remove trailing new lines in ``CP.lines`` and in ``CP.__iter__``.
+* Remove trailing new lines in ``CP.out``, ``CP.lines`` and ``CP.__iter__``.
 
 * Add all `string methods <https://docs.python.org/3/library/stdtypes.html#string-methods>`_
   i.e. the ``$().split()`` will return ``CP.out.split()`` that is `IFS <https://bash.cyberciti.biz/guide/$IFS>`_ analogue in fact.
