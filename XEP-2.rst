@@ -123,7 +123,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
       - Subproc current / proposed
       - Python current / proposed
 
-    * - Get single argument.
+    * - **Get single argument.**
 
         ✅ Becomes shorter.
 
@@ -134,7 +134,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
             
         ``name = $(whoami).out``
         
-    * - Get multiple arguments.
+    * - **Get multiple arguments.**
 
         ✅ Becomes shorter.
 
@@ -145,7 +145,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
             
         ``files = $(ls)``
 
-    * - Get output as concatenated lines.
+    * - **Get output as concatenated lines.**
 
         ✅ Describing of what we want to get explicitly.
 
@@ -156,7 +156,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
             
         ``html = $(curl https://xon.sh).out``
 
-    * - Custom output splitting.
+    * - **Custom output splitting.**
 
         ✅ Becomes shorter.
 
@@ -165,7 +165,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
         ``shell = $(head -n1 /etc/passwd).split(':').pop()``
 
-    * - Apply string function to every line.
+    * - **Apply string function to every line.**
 
         ✅ Becomes shorter.
 
@@ -174,7 +174,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
         ``lines = $(ifconfig).lines_strip()``
 
-    * - ``grep`` single argument.
+    * - **Single argument in grep.**
 
         ✅ Fixed the bug.
 
@@ -186,7 +186,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
       - Not applicable.
 
-    * - Python substitution in subproc mode.
+    * - **Python substitution in subproc mode.**
 
         ✅ Fixed the substitution expectations.
 
@@ -198,7 +198,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
       - Not applicable.
 
-    * - Syntax to remember.
+    * - **Syntax to remember.**
 
         ✅ Less syntax to remember.
 
