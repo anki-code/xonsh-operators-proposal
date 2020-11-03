@@ -198,6 +198,16 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
       - Not applicable.
 
+    * - Remember ``!()``, ``![]`` meaning.
+
+        ✅ Less syntax to remember.
+
+      - Remember the meaning of ``$[]``, ``!()``, ``$[]``, ``![]`` and the difference in current version.
+
+        One ``$`` operator with auto suggestion and named properties and functions in XEP-2.
+
+      - The same as subproc.
+
 
 
 Feel free to `suggest your use cases <https://github.com/anki-code/xonsh-operators-proposal/issues/new>`_.
