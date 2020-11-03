@@ -147,6 +147,8 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
     * - Get output as concatenated lines.
 
+        ✅ Describing of what we want to get explicitly.
+
       - ``echo $(curl https://xon.sh)``
       
         ``echo @($(curl https://xon.sh).out)``
