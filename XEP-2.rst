@@ -184,7 +184,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
       - Not applicable.
 
-    * - Python substitution.
+    * - Python substitution in subproc mode.
 
         ✅ Fixed the substitution expectations.
 
