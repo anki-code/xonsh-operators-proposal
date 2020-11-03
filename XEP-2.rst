@@ -145,7 +145,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
             
         ``files = $(ls)``
 
-    * - Get pure output.
+    * - Get output as concatenated lines.
 
       - ``echo -n $(curl https://xon.sh) | wc -c``
       
