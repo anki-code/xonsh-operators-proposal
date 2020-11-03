@@ -1,1 +1,2 @@
 *.xsh text linguist-language=Python
+*.xonshrc* text linguist-language=Python
