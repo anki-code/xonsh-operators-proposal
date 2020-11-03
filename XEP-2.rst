@@ -198,7 +198,7 @@ The table of use cases compares the syntax of the current xonsh and the proposed
 
       - Not applicable.
 
-    * - Remember ``!()``, ``![]`` meaning.
+    * - Syntax to remember.
 
         ✅ Less syntax to remember.
 
