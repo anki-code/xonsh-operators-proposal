@@ -87,7 +87,7 @@ Operators changes:
 Quick examples
 **************
 
-.. image:: xop-2.png
+.. image:: xep-2.png
 
 The source in `XEP-2-examples.xsh <XEP-2-examples.xsh>`_.
 
