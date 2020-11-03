@@ -209,8 +209,8 @@ Questions
    the output. Or you could apply many times, like @split@upper(). Then what we have now would just be the default
    value: @split$() == @$(). However, this was never fully done, so maybe it is better to drop the syntax entirely.
 
-   **Answer**: Do nothing because it's a syntax sugar for getting words from output. May be we need to add it to
-   python mode. Feel free to open issue to discuss.
+   **Answer**: Do nothing because it's a syntax sugar for getting words from output. We suggest to keep short calls
+   using this operator unchanged.
 
 3. From @laloch: What about leading and trailing whitespace around the ``$()`` operator?
    Can you do ``mkdir -p /tmp/$(whoami)/garbage``?
