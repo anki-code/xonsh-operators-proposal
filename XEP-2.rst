@@ -241,3 +241,6 @@ Questions
 
    **Answer**: `Detailed answer <https://github.com/anki-code/xonsh-operators-proposal/issues/2#issuecomment-720000359>`_.
 
+4. From @daniel-shimon: How to get the complete output?
+
+   **Answer**: By using `CP.raw_out <https://github.com/xonsh/xonsh/pull/3925>`_.
