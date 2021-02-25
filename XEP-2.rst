@@ -104,6 +104,9 @@ Install and try:
 
 .. code-block:: bash
 
+    ## You can try in docker instead of local host:
+    # docker run --rm -it python:3.6-slim /bin/bash -c 'apt update; apt install -y git; /bin/bash'
+    
     pip install -U git+https://github.com/anki-code/xonsh2
     xonsh2
 
