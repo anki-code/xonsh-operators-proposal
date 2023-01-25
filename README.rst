@@ -10,6 +10,10 @@ Xonsh Enrichment Proposals (XEP)
       - Link
       - Description
 
+    * - 2023-01-25
+      - Concept
+      - No page
+      - Use back quotes without modi for glob instead of regex.
     * - 2020-10-30
       - Ready to review
       - `XEP-2 <XEP-2.rst>`_
